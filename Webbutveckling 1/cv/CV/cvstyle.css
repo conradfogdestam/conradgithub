@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: url("https://wallpaperforu.com/wp-content/uploads/2020/07/neon-wallpaper-20070214082515-scaled.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+a:visited {
+    color: lightgray;
+  }
+
+a:link {
+    color: lightgray;
+  }
+
+a:hover {
+    color: rgb(97, 159, 170);
+  }
+
+  
+
+.title {
+    font-size: 40px;
+    color: lightgray;
+}

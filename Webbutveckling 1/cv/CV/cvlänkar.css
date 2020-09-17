@@ -1,0 +1,23 @@
+
+body {
+    background-color: pink;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 80px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+h1 {
+  font-size: 60px;
+}
+a:link {
+    color: black;
+  }
+
+a:hover {
+    color: rgb(97, 159, 170);
+  }
+  a:visited {
+    color: black;
+  }
