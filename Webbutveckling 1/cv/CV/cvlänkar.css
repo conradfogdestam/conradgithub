@@ -16,8 +16,9 @@ a:link {
   }
 
 a:hover {
-    color: rgb(97, 159, 170);
+    color: darkgray;
   }
-  a:visited {
+
+a:visited {
     color: black;
   }
