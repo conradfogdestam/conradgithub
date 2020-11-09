@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(56, 56, 56);
+    min-height: 2000px;
+  }
+
+  h1 {
+    font-size: 100;
+    text-align: center;
+    color: grey;
+}
+  /* CONTAINER 1 */
+  .container  {
+      display: flex;
+      margin: 5%;
+      background-color: rgb(56, 56, 56);
+    
+    }
+    
+    .item {
+      display: flex;
+      flex-grow: 1;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      background-color: grey;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+    .item + .item {
+      margin-left: 2%;
+    }
+  
+    a:hover {
+      background-color: lightslategrey;
+    }
+  
+    
+    /* unvisited link */
+  a:link {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: black;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    background-color: lightblue;
+  }
+
+/* NAVBAR */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgray;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    background-color: lightblue;
+  }
+
+  /* FOOTER */
+  .footer {
+      text-align: center;
+      color: grey;
+      bottom: 0;
+      width: 100%;
+  }
+  

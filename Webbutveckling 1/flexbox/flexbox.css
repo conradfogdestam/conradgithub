@@ -1,0 +1,42 @@
+body{
+  background-color: powderblue;
+}
+
+.container {
+    display: flex;
+    margin: 5%;
+    background-color: powderblue;
+  }
+  
+  .item {
+    display: flex;
+    flex-grow: 1;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightsalmon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .item + .item {
+    margin-left: 2%;
+  }
+
+  a:hover {
+    background-color: lightslategrey;
+  }
+
+  /* unvisited link */
+a:link {
+  color: black;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  background-color: lightslategrey;
+}
