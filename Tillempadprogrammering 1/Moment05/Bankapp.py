@@ -6,16 +6,16 @@ from colorama import Fore, Back, Style
 init()
 
 
-print(Fore.RED + "BAHAMAS BANK")
+print(Fore.GREEN + "Cayman Islands National Bank™")
 
-sg.theme('DarkAmber')   # Add a touch of color
+sg.theme('DarkPurple4')   # Add a touch of color
 # All the stuff inside your window.
-layout = [  [sg.Text('Some text on Row 1')],
-            [sg.Text('Enter something on Row 2'), sg.InputText()],
+layout = [  [sg.Text('Your Cayman Islands National Bank™ account')],
+            [sg.Text('Current Balance: '), sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
 # Create the Window
-window = sg.Window('Window Title', layout)
+window = sg.Window('Cayman Islands National Bank™', layout)
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
