@@ -7,7 +7,6 @@ hojd = []
 volym = []
 kvadrat = []
 
-global counter
 counter = 0
 
 def areafunk(s1,s2):
