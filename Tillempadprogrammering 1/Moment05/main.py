@@ -26,10 +26,10 @@ while True:
     ''').upper()
     if userinput == 'A':
         while True:
-            userans = input('Would you like to open a new bank account? (Y/N)').upper()
+            userans = input('Would you like to open a new bank account? (Y/N)  ').upper()
 
             if userans == 'Y' or userans == 'YES':
-                name = input('What is your name?')
+                name = input('What is your name?  ')
 
                 user1 = bankAccount(name, 1000)
                 transactions.append(+1000)
@@ -43,14 +43,14 @@ while True:
                 print(Fore.GREEN + 'ok...')
                 break
     elif userinput == 'B':
-        ui = int(input('How much would you like to deposit?'))
+        ui = int(input('How much would you like to deposit?  '))
         user1.deposit(ui)
-        print(Fore.GREEN + f'{ui} Deposited')
+        print(Fore.GREEN + f'${ui} Deposited')
         transactions.append(+ui)
         saldo.append(user1.balance)
 
     elif userinput == 'C':
-        usi = int(input('How much would you like to withdraw?'))
+        usi = int(input('How much would you like to withdraw?  '))
         if usi > user1.balance:
             print('Incufficient funds')
         user1.withdraw(usi)
@@ -70,10 +70,13 @@ while True:
         print(f'${user1.balance} currently available')
 
     elif userinput == 'F':
-        ter = input('Are you sure you want to terminate your account, all data will be lost forever. Press "C" to continue').upper()
+        ter = input('Are you sure you want to terminate your account, all data will be lost forever. Press "C" to continue  ').upper()
         if ter == 'C':
-            os.remove("transaction.txt")
-            print("Transactions Removed!")
+            try:
+                os.remove("transaction.txt")
+                print("Transactions Removed!")
+            except:
+                print(Fore.RED + 'No account to terminate')
         else:
             pass
 

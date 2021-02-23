@@ -1,7 +1,8 @@
 def register_page():
     import PySimpleGUI as sg
-    sg.theme('DarkPurple4')  # Add a touch of color
-    # All the stuff inside your window.
+    from bankapploginz import login_page
+
+    sg.theme('DarkPurple4')
     layout = [[sg.Text('Cayman Islands National Bank™', size=(30, 1), font='Courier 20')],
               [sg.Text('Name   '), sg.InputText()],
               [sg.Text('Password   '), sg.InputText(key='Password', password_char='*')],
@@ -18,7 +19,7 @@ def register_page():
             login_page()
             break
         if event == 'Register':
-            print('Welcome to Cayman Islands National Bank™')
+            print('Welcome to Cayman Islands National Bank™ ')
             #save registrstion info
             pass
 
