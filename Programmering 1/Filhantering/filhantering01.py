@@ -8,14 +8,14 @@ sedan skrivs en osorterad lista ut och sen en sorteradlista med sort()
 
 from colorama import Fore, Back, Style, init
 init(autoreset=True)
-import random as rnd
+import random
 
 kastadediceman = []
 
 for i in range(1,11):
-    dice = rnd.randint(1,6)
+    dice = random.randint(1,6)
     kastadediceman.append(dice)
-with open("diceFile.txt", "a") as f:
+with open("diceRoll.txt", "a") as f:
     f.write("10 random dice rolls: " + str(kastadediceman) + "\n")
     kastadediceman.sort()
     f.write("Sorterad lista: " + str(kastadediceman) + "\n")
