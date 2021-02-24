@@ -1,6 +1,10 @@
 #Uppgift 02
 #Conrad TE19D
+'''
+Först kommer alla imports, importade colorama för att det skulle bli lite fin färg.
 
+La in en lite fin och stor titel till programmet
+'''
 from colorama import Fore, Back, Style, init
 init(autoreset=True)
 import string
@@ -34,12 +38,12 @@ print(Fore.LIGHTMAGENTA_EX + Back.LIGHTCYAN_EX + '''
 █░░░░░░░░░░░░███░░░░░░░░░░█░░░░░░░░░░░░░░█░░░░░░░░░░█████░░░░░░█████░░░░░░░░░░░░░░███████░░░░░░█████████░░░░░░███
 █████████████████████████████████████████████████████████████████████████████████████████████████████████████████ 
 ''')
-#Kollar om talet är fyrsiffrigt, kollar även om det är fyrsiffrigt fast det är negativt
+
 def ar_fyrsirigt(tal):
-    tal_str = str(tal)
+    tal_str = str(tal) # kollar om det är fyrsiffrigt
     if len(tal_str) == 4:
         return True
-    elif tal_str.startswith("-") and len(tal_str) == 5:
+    elif tal_str.startswith('-') and len(tal_str) == 5: #elif för om det skulle vara ett fyrsiffrigt negativt tal (om den börjar med '-')
         return True
     else:
         return False
@@ -49,6 +53,6 @@ testtal = [100, 231, 10000, 10001, -1000, 102313]
 
 for t in testtal:
     if ar_fyrsirigt(t):
-        print(Fore.GREEN + f"{t} är fyrsiffrigt")
+        print(Fore.GREEN + f'{t} är fyrsiffrigt') # GRÖN print för om det är ett fyrsiffrigt tal
     else:
-        print(Fore.RED + f"{t} är inte fyrsiffrigt")
+        print(Fore.RED + f'{t} är inte fyrsiffrigt') #RÖD print om de inte är fyrsiffrigt
