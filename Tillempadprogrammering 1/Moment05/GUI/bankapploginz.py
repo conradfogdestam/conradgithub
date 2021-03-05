@@ -11,7 +11,6 @@ def login_page():
                 [sg.Button('Login'), sg.Button('Register'), sg.Button('Cancel')] ]
 
     window = sg.Window('Cayman Islands National Bank™', layout)
-    text_input = values['-IN-0']
 
     while True:
         event, values = window.read()

@@ -46,14 +46,14 @@ sen en yttiligare for loop som loopar igenom 'infile' och kollar vilket betyg el
 '''
 
 # C)
+F = []
+E = []
+D = []
+C = []
+B = []
+A = []
+infile = []
 with open(filename, "r+") as f:
-    F = []
-    E = []
-    D = []
-    C = []
-    B = []
-    A = []
-    infile = []
     for i in range(1,20):
         infile.append(f.readline())
     for elev in infile:

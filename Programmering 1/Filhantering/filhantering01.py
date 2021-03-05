@@ -19,7 +19,7 @@ with open("diceRoll.txt", "a") as f:
     f.write("10 random dice rolls: " + str(kastadediceman) + "\n")
     kastadediceman.sort()
     f.write("Sorterad lista: " + str(kastadediceman) + "\n")
-    f.write("Antal femmor: "+ str(kastadediceman.count(5)) + "\n")
+    f.write("Antal femmor: " + str(kastadediceman.count(5)) + "\n")
 
 print(Fore.GREEN + "Kolla filen diceFile.txt för svar")
 print(Fore.CYAN + '''
