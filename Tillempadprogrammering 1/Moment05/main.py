@@ -77,7 +77,7 @@ while True:
 
                     if userinput == 'W':
 
-                        ui = int(input(Fore.LIGHTMAGENTA_EX + 'How much would you like to withdraw?'))
+                        ui = int(input(Fore.LIGHTMAGENTA_EX + 'How much would you like to withdraw? '))
                         if ui < FUNKTIONER.check_balance(str(user)):
                             print('gg')
                             FUNKTIONER.withdrawal(user, password, ui)
@@ -86,8 +86,8 @@ while True:
                                 f.write(f'- ${ui}, Available balance: $' + str(FUNKTIONER.check_balance(user)) + '\n')
 
                         else:
-                            print('Insufficient funds')
-                            print('Funds currently available to withdraw', FUNKTIONER.check_balance(str(user)))
+                            print('Insufficient funds!!!!!!')
+                            print('Funds currently available to withdraw $', FUNKTIONER.check_balance(str(user)))
 
 
                     elif userinput == 'D':
@@ -106,12 +106,11 @@ while True:
 
                         with open(str(user) + 'transactions.txt', 'r+') as f:
                             for line in (str(user) + 'transactions.txt'):
-                                print(f.read())
-                                #print(f.readlines().strip('\n'))
+                                print(Fore.LIGHTCYAN_EX + f.read())
 
 
                     elif userinput == 'B':
-                        print(FUNKTIONER.check_balance(str(user)))
+                        print(Fore.LIGHTCYAN_EX + FUNKTIONER.check_balance(str(user)))
 
                     elif userinput == 'E':
                         print(Fore.LIGHTMAGENTA_EX + 'GOODBYE')
@@ -126,5 +125,5 @@ while True:
                             for line in lines:
                                 if line.strip("\n") != str(user) + ' ' + str(password):
                                     f.write(line)
-                        print(Fore.LIGHTMAGENTA_EX + 'Sucsessfully deleted all files')
+                        print(Fore.LIGHTMAGENTA_EX + 'Sucsessfully deleted all files!!!')
                         sys.exit()
