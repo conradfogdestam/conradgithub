@@ -1,4 +1,7 @@
-import random as rnd
+#Conrad Fogdestam TE19D
+#Dictionary02
+
+import random as rnd # för att simulera tärningskast
 
 amount = { # dictionary för att hålla info om antal tärningskast på olika nummer
     '1': 0,

@@ -1,3 +1,6 @@
+#Conrad Fogdestam TE19D
+#Dictionary01
+
 kurser = {
     'tillämpad_1' : 100,
     'programmering_1' : 100,
