@@ -5,7 +5,8 @@ x = np.arange(1,11)
 y = 3*x+1
 
 plt.plot(x,y)
-plt.ylabel
-plt.xlabel
-plt.show
+plt.title('The Selk Brewery graph\n(Built with DeWALT)')
+plt.xlabel('X ')
+plt.ylabel('Y')
+plt.show()
 print(y)
