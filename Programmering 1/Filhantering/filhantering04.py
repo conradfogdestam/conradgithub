@@ -73,3 +73,5 @@ print(Fore.LIGHTMAGENTA_EX + '''
 TASTY COFFEE
 ''')
 
+print("kolla filen Simulering.txt för svar")
+
