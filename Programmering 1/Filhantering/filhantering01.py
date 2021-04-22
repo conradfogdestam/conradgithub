@@ -21,7 +21,7 @@ with open("diceRoll.txt", "a") as f:
     f.write("Sorterad lista: " + str(kastadediceman) + "\n")
     f.write("Antal femmor: " + str(kastadediceman.count(5)) + "\n")
 
-print(Fore.GREEN + "Kolla filen diceFile.txt för svar")
+print(Fore.GREEN + "Kolla filen diceRoll.txt för svar")
 print(Fore.CYAN + '''
 ───▄▀▀▀▀▀   ▄█▀▀▀█▄
 ──▐▄▄▄▄▄▄▄▄██▌▀▄▀▐██
