@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  border: 0px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15vh;
+  background-color: #ff9100;
+}
+
+button {
+  width: 20vw;
+  background-color: #8e88e7;
+}
+
+main {
+  height: 100vh;
+  background-color: #eb122f;
+}
+
+footer {
+  text-align: center;
+  height: 20vh;
+  background-color: #631111;
+}
+/*# sourceMappingURL=style.css.map */

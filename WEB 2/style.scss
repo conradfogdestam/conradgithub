@@ -1,0 +1,36 @@
+@mixin static-bg-color ($color) {
+  background-color: $color;
+}
+
+@mixin centertext{
+  text-align: center;
+}
+
+* {
+    margin: 0px;
+    border: 0px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 15vh; 
+    @include static-bg-color(rgb(255, 145, 0))  
+  }
+
+button {
+    width: 20vw;
+    @include static-bg-color(rgb(142, 136, 231))
+}
+  
+main {
+    height: 100vh;
+    @include static-bg-color(rgb(235, 18, 47))
+  }
+
+footer {    
+  @include centertext();
+  height: 20vh;
+  @include static-bg-color (rgb(99, 17, 17));
+}
+  
